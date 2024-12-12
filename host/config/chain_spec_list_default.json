@@ -151,5 +151,123 @@
         "genesis_time": 0,
         "seconds_per_slot": 1,
         "is_taiko": true
+    },
+    {
+        "name": "moonchain_geneva",
+        "chain_id": 5167004,
+        "max_spec_id": "ONTAKE",
+        "hard_forks": {
+            "ONTAKE": {
+                "Block": 0
+            }
+        },
+        "eip_1559_constants": {
+            "base_fee_change_denominator": "0x8",
+            "base_fee_max_increase_denominator": "0x8",
+            "base_fee_max_decrease_denominator": "0x8",
+            "elasticity_multiplier": "0x2"
+        },
+        "l1_contract": "0x6a5c9E342d5FB5f5EF8a799f0cAAB2678C939b0B",
+        "l2_contract": "0x1000777700000000000000000000000000000001",
+        "rpc": "https://geneva-rpc.moonchain.com",
+        "beacon_rpc": null,
+        "verifier_address_forks": {
+            "ONTAKE": {
+                "SGX": "0x7FF12AC8385e67970eBB8aEAc6c42c133E690649",
+                "SP1": "0xf08B17b181B3452d683E0Ff64268686d8116EA61",
+                "RISC0": "0x425cB065F0f0e1BBF3FCB7FD5c4a0c94248863a6"
+            }
+        },
+        "genesis_time": 0,
+        "seconds_per_slot": 1,
+        "is_taiko": true
+    },
+    {
+        "name": "arbitrum_sepolia",
+        "chain_id": 421614,
+        "max_spec_id": "CANCUN",
+        "hard_forks": {
+            "CANCUN": {
+                "Block": 0
+            }
+        },
+        "eip_1559_constants": {
+            "base_fee_change_denominator": "0x8",
+            "base_fee_max_increase_denominator": "0x8",
+            "base_fee_max_decrease_denominator": "0x8",
+            "elasticity_multiplier": "0x2"
+        },
+        "l1_contract": null,
+        "l2_contract": null,
+        "rpc": "https://sepolia-rollup.arbitrum.io/rpc",
+        "verifier_address_forks": {
+            "CANCUN": {
+                "SGX": "0x532efbf6d62720d0b2a2bb9d11066e8588cae6d9",
+                "SP1": null,
+                "RISC0": "0x0000000000000000000000000000000000000000"
+            }
+        },
+        "genesis_time": 1695902400,
+        "seconds_per_slot": 12,
+        "is_taiko": false
+    },
+    {
+        "name": "moonchain_mainnet",
+        "chain_id": 18686,
+        "max_spec_id": "ONTAKE",
+        "hard_forks": {
+            "ONTAKE": {
+                "Block": 0
+            }
+        },
+        "eip_1559_constants": {
+            "base_fee_change_denominator": "0x8",
+            "base_fee_max_increase_denominator": "0x8",
+            "base_fee_max_decrease_denominator": "0x8",
+            "elasticity_multiplier": "0x2"
+        },
+        "l1_contract": "0x54D8864e8855A7B66eE42B8F2Eaa0F2E06bd641a",
+        "l2_contract": "0x1000777700000000000000000000000000000001",
+        "rpc": "https://rpc.mxc.com",
+        "beacon_rpc": null,
+        "verifier_address_forks": {
+            "ONTAKE": {
+                "SGX": "0x7FF12AC8385e67970eBB8aEAc6c42c133E690649",
+                "SP1": "0xf08B17b181B3452d683E0Ff64268686d8116EA61",
+                "RISC0": "0x425cB065F0f0e1BBF3FCB7FD5c4a0c94248863a6"
+            }
+        },
+        "genesis_time": 0,
+        "seconds_per_slot": 1,
+        "is_taiko": true
+    },
+    {
+        "name": "arbitrum_one",
+        "chain_id": 42161,
+        "max_spec_id": "CANCUN",
+        "hard_forks": {
+            "CANCUN": {
+                "Block": 0
+            }
+        },
+        "eip_1559_constants": {
+            "base_fee_change_denominator": "0x8",
+            "base_fee_max_increase_denominator": "0x8",
+            "base_fee_max_decrease_denominator": "0x8",
+            "elasticity_multiplier": "0x2"
+        },
+        "l1_contract": null,
+        "l2_contract": null,
+        "rpc": "https://arbitrum.llamarpc.com",
+        "verifier_address_forks": {
+            "CANCUN": {
+                "SGX": "0x532efbf6d62720d0b2a2bb9d11066e8588cae6d9",
+                "SP1": null,
+                "RISC0": "0x0000000000000000000000000000000000000000"
+            }
+        },
+        "genesis_time": 1695902400,
+        "seconds_per_slot": 12,
+        "is_taiko": false
     }
 ]

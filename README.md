@@ -1,6 +1,6 @@
 # raiko
 
-Taiko's multi-prover for Taiko & Ethereum blocks. Currently supports Risc0, SP1, and SGX.
+Moonchain's multi-prover for Moonchain & Ethereum blocks. Currently supports Risc0, SP1, and SGX.
 
 ## Usage
 
@@ -42,10 +42,10 @@ Just for development with the native prover which runs through the block executi
 cargo run
 ```
 
-The `run` command will start the host service that listens to proof requests, then in another terminal you can do requests like this, which proves the 10th block with the native prover on Taiko's A7 testnet:
+The `run` command will start the host service that listens to proof requests, then in another terminal you can do requests like this, which proves the 10th block with the native prover on Moonchain's A7 testnet:
 
 ```shell
-./script/prove-block.sh taiko_a7 native 10
+./script/prove-block.sh moonchain_geneva native 10
 ```
 
 ### Task Management
@@ -65,7 +65,7 @@ To prune all tasks (the cancellation feature that kills prover is still WIP):
 Look into `prove-block.sh` for the available options or run the script without inputs for hints. You can also automatically sync with the tip of the chain and prove all new blocks:
 
 ```shell
-./script/prove-block.sh taiko_a7 native sync
+./script/prove-block.sh moonchain_geneva native sync
 ```
 
 ### Task Management
@@ -107,7 +107,7 @@ If you are using the Bonsai service, edit `run-bonsai.sh` to setup your API key,
 
 ```shell
 ./script/setup-bonsai.sh
-./script/prove-block.sh taiko_a7 risc0-bonsai 10
+./script/prove-block.sh moonchain_geneva risc0-bonsai 10
 ```
 
 #### GPU

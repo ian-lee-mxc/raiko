@@ -1,6 +1,6 @@
 {
-    "network": "taiko_a7",
-    "l1_network": "holesky",
+    "network": "moonchain_geneva",
+    "l1_network": "arbitrum_sepolia",
     "sgx": {
         "instance_id": 123456
     }

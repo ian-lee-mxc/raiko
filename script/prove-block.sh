@@ -34,8 +34,15 @@ elif [ "$chain" == "taiko_mainnet" ]; then
 	l1_network="ethereum"
 elif [ "$chain" == "taiko_a7" ]; then
 	l1_network="holesky"
+	rpc="https://rpc.hekla.taiko.xyz"
 elif [ "$chain" == "taiko_dev" ]; then
 	l1_network="taiko_dev_l1"
+elif [ "$chain" == "moonchain_geneva" ]; then
+	l1_network="arbitrum_sepolia"
+	rpc="https://geneva-rpc.moonchain.com"
+elif [ "$chain" == "moonchain_mainnet" ]; then
+	l1_network="arbitrum_one"
+	rpc="https://rpc.mxc.com"
 else
 	echo "Using customized chain name $1. Please double check the RPCs."
 	l1_network="holesky"
