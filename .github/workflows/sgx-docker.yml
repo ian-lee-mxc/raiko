@@ -1,6 +1,7 @@
-name: Build SGX Docker
+name: Build SGX Docker Image
 
 on:
+  workflow_dispatch:
   push:
     branches: 
       - 'release/**'
@@ -10,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    name: Build and test sgx with Docker
+    name: Build SGX Docker Image
 
     steps:
       - name: Checkout
